@@ -1,0 +1,98 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"DbTCHDV1P6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management</span>\",\"col\":12}},{\"id\":\"AdpIdNi2Hq\",\"type\":\"card\",\"data\":{\"card_name\":\"Main Doctypes\",\"col\":4}}]",
+ "creation": "2025-12-04 12:35:56.798959",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "onboarding",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Student Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Main Doctypes",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Season Result",
+   "link_count": 0,
+   "link_to": "Student Season Result SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Profile",
+   "link_count": 0,
+   "link_to": "Student Profile SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "University",
+   "link_count": 0,
+   "link_to": "University SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "College",
+   "link_count": 0,
+   "link_to": "College SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Course",
+   "link_count": 0,
+   "link_to": "Course SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Grade",
+   "link_count": 0,
+   "link_to": "Grade SH",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-04 15:37:54.715919",
+ "modified_by": "Administrator",
+ "module": "Shamalat",
+ "name": "Student Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "Student Management"
+}

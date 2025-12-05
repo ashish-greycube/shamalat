@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SSR-{student_ref}-{##}",
+ "creation": "2025-12-04 15:24:06.415443",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_details",
+  "results_section",
+  "total_approved_hours",
+  "column_break_moema",
+  "total_gained_hours",
+  "column_break_kw6ja",
+  "total_result",
+  "column_break_kmhih",
+  "total_points",
+  "section_break_zggtr",
+  "college",
+  "student_ref",
+  "student_season_ref",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_details",
+   "fieldtype": "Table",
+   "label": "Course Details",
+   "options": "Season Wise Course Details SH"
+  },
+  {
+   "fieldname": "results_section",
+   "fieldtype": "Section Break",
+   "label": "Results"
+  },
+  {
+   "fieldname": "total_approved_hours",
+   "fieldtype": "Data",
+   "label": "Total Approved Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_moema",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_gained_hours",
+   "fieldtype": "Data",
+   "label": "Total Gained Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kw6ja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_result",
+   "fieldtype": "Data",
+   "label": "Total Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kmhih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_points",
+   "fieldtype": "Data",
+   "label": "Total Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zggtr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_ref",
+   "fieldtype": "Link",
+   "label": "Student Ref",
+   "options": "Student Profile SH",
+   "read_only": 1
+  },
+  {
+   "fieldname": "student_season_ref",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Student Season Ref",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Season Result SH",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "college",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "College",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-05 10:02:35.388185",
+ "modified_by": "Administrator",
+ "module": "Shamalat",
+ "name": "Student Season Result SH",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

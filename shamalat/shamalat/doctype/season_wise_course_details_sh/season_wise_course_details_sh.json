@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-04 15:19:32.384746",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_code",
+  "course_name",
+  "approved_hours",
+  "gained_hours",
+  "result",
+  "grade",
+  "points"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Course Code",
+   "options": "Course SH"
+  },
+  {
+   "fetch_from": "course_code.course_name",
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "course_code.approved_hours",
+   "fieldname": "approved_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Approved Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gained_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gained Hours",
+   "reqd": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Result",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Points",
+   "precision": "2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-05 11:20:17.755483",
+ "modified_by": "Administrator",
+ "module": "Shamalat",
+ "name": "Season Wise Course Details SH",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

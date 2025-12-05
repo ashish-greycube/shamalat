@@ -1,0 +1,399 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{student_name}-{card_id}",
+ "creation": "2025-12-04 12:59:33.067657",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "student_name",
+  "email",
+  "parent_phone_no",
+  "student_phone_no",
+  "column_break_gpasd",
+  "card_id",
+  "grade",
+  "college_name",
+  "university_name",
+  "university_id",
+  "results_tab",
+  "no_of_season_in_college",
+  "section_break_vqshz",
+  "season_1_details",
+  "add_info_one",
+  "season_1",
+  "season_3_details",
+  "add_info_three",
+  "season_3",
+  "season_5_details",
+  "add_info_five",
+  "season_5",
+  "season_7_details",
+  "add_info_seven",
+  "season_7",
+  "season_9_details",
+  "add_info_nine",
+  "season_9",
+  "season_11_details",
+  "add_info_eleven",
+  "season_11",
+  "column_break_xk5em",
+  "season_2_details",
+  "add_info_two",
+  "season_2",
+  "season_4_details",
+  "add_info_four",
+  "season_4",
+  "season_6_details",
+  "add_info_six",
+  "season_6",
+  "season_8_details",
+  "add_info_eight",
+  "season_8",
+  "season_10_details",
+  "add_info_ten",
+  "season_10",
+  "season_12_details",
+  "add_info_twelve",
+  "season_12"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "parent_phone_no",
+   "fieldtype": "Data",
+   "label": "Parent Phone No"
+  },
+  {
+   "fieldname": "student_phone_no",
+   "fieldtype": "Data",
+   "label": "Student Phone No"
+  },
+  {
+   "fieldname": "column_break_gpasd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade SH"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "college_name",
+   "fieldtype": "Link",
+   "label": "College Name",
+   "options": "College SH"
+  },
+  {
+   "fieldname": "university_name",
+   "fieldtype": "Link",
+   "label": "University Name",
+   "options": "University SH"
+  },
+  {
+   "fetch_from": "university_name.university_id",
+   "fieldname": "university_id",
+   "fieldtype": "Data",
+   "label": "University ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "results_tab",
+   "fieldtype": "Tab Break",
+   "label": "Results"
+  },
+  {
+   "default": "0",
+   "fetch_from": "college_name.no_of_seasons",
+   "fieldname": "no_of_season_in_college",
+   "fieldtype": "Data",
+   "label": "No Of Season In College",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vqshz",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "season_1",
+   "fieldtype": "HTML",
+   "label": "Season 1",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=1;",
+   "fieldname": "add_info_one",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=2;",
+   "fieldname": "add_info_two",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_2",
+   "fieldtype": "HTML",
+   "label": "Season 2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=3;",
+   "fieldname": "add_info_three",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_3",
+   "fieldtype": "HTML",
+   "label": "Season 3",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=4;",
+   "fieldname": "add_info_four",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_4",
+   "fieldtype": "HTML",
+   "label": "Season 4",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=5;",
+   "fieldname": "add_info_five",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_5",
+   "fieldtype": "HTML",
+   "label": "Season 5",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=6;",
+   "fieldname": "add_info_six",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_6",
+   "fieldtype": "HTML",
+   "label": "Season 6",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=7;",
+   "fieldname": "add_info_seven",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_7",
+   "fieldtype": "HTML",
+   "label": "Season 7",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=8;",
+   "fieldname": "add_info_eight",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_8",
+   "fieldtype": "HTML",
+   "label": "Season 8",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=9;",
+   "fieldname": "add_info_nine",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_9",
+   "fieldtype": "HTML",
+   "label": "Season 9",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=10;",
+   "fieldname": "add_info_ten",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_10",
+   "fieldtype": "HTML",
+   "label": "Season 10",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=11;",
+   "fieldname": "add_info_eleven",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "fieldname": "season_11",
+   "fieldtype": "HTML",
+   "label": "Season 11",
+   "read_only": 1
+  },
+  {
+   "fieldname": "season_12",
+   "fieldtype": "HTML",
+   "label": "Season 12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xk5em",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=12;",
+   "fieldname": "add_info_twelve",
+   "fieldtype": "Button",
+   "label": "Add Info"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=1;",
+   "fieldname": "season_1_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 1 Details</p>",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>=3;",
+   "fieldname": "season_3_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 3 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=5;",
+   "fieldname": "season_5_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 5 Details</p>",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=7;",
+   "fieldname": "season_7_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 7 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=9;",
+   "fieldname": "season_9_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 9 Details</p><p></p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=11;",
+   "fieldname": "season_11_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 11 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=2;",
+   "fieldname": "season_2_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 2 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=4;",
+   "fieldname": "season_4_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 4 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=6;",
+   "fieldname": "season_6_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 6 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=8;",
+   "fieldname": "season_8_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 8 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=10;",
+   "fieldname": "season_10_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 10 Details</p>"
+  },
+  {
+   "depends_on": "eval:doc.no_of_season_in_college>0 && doc.no_of_season_in_college>=12;",
+   "fieldname": "season_12_details",
+   "fieldtype": "HTML",
+   "options": "<p>Season 12 Details</p>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Results",
+   "link_doctype": "Student Season Result SH",
+   "link_fieldname": "student_ref"
+  }
+ ],
+ "modified": "2025-12-05 09:55:36.239048",
+ "modified_by": "Administrator",
+ "module": "Shamalat",
+ "name": "Student Profile SH",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
